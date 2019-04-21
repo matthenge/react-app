@@ -1,13 +1,14 @@
 {
-  "name": "webpack-react-tutorial",
+  "name": "questioner-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --mode development",
+    "dev": "webpack-dev-server --open",
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "webpack -p",
+    "build": "webpack -p"
   },
   "keywords": [],
   "author": "",

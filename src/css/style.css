@@ -1,0 +1,99 @@
+body {
+    background: #edeff0;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .cont {
+    width: 90%;
+    max-width: 1100px;
+    margin: 1.1em auto;
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+  
+  .card {
+    box-sizing: border-box;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .card div {
+    text-align: center;
+    padding: 1em;
+    background-color: #000;
+    margin-bottom: 1.5em;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 8px;
+    color: #384047;
+    line-height: 1.2;
+    margin-top: 5px;
+  }
+  
+  h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+  
+  p {
+    color: #222;
+    font-size: 1em;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  img {
+    width: 150px;
+}
+.tags{
+  background-color: rgb(238, 234, 234);
+  color: #78C2AD;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #78C2AD;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+  
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+  
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

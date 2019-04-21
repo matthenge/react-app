@@ -7,7 +7,7 @@ module.exports = {
       output: {
         path: __dirname,
         publicPath: '/',
-        filename: 'main.js'
+        filename: './dist/main.js'
       },
     module: {
         rules: [

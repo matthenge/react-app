@@ -1,6 +1,7 @@
 import React from "react";
 import "../../../css/style.css"
-import image from "./planet.jpg"
+import image from "../../../images/planet.jpg"
+
 const Meetup = (meetup) => {
   const date = new Date(meetup.scheduled_date);
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

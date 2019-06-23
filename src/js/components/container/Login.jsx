@@ -31,7 +31,9 @@ class Login extends Component {
           .then(res => res.json())
           .then(data => {
               snackBar(data.Message)
-              console.log(data)
+              window.setTimeout(function () {
+                location.href = "/meetups";
+              }, 1000);
             })
       }
     render() {

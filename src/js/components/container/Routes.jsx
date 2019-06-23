@@ -11,7 +11,7 @@ class Routes extends Component {
     render() {
         return(
             <BrowserRouter>
-                <Route exact path="/login" component={Login}/>
+                <Route exact path="/" component={Login}/>
                 <Route exact path="/meetups" component={Meetups}/>
                 <Route exact path="/meetup" component={Onemeet}/>
             </BrowserRouter>
